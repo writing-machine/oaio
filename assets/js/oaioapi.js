@@ -68,8 +68,7 @@ self.onmessage = async function (event) {
 			input: messagesForApi      // Ensure our carefully constructed messages array is used
 		};
 		console.log('Worker: Here is the final API payload:', finalApiPayload);
-
-
+		
 		// --- 5. Make the LLM API call ---
 		const apiOptions = {
 			method: 'POST',
