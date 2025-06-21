@@ -19,7 +19,7 @@ function runMachine() {
   
   try {
     const cmjMessages = platoHtmlToCmj(htmlContent);
-    const mujMessages = platoHtmlToMpuj(htmlContent);
+    const mujMessages = platoHtmlToMuj(htmlContent);
     
     if (!window.machineConfig || !window.machineConfig.work || !window.machineConfig.name) {
       const errorMsg = "LLM Interaction: machineConfig is not properly set up (missing work or name).";
