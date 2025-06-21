@@ -1,0 +1,12 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+  - LICENSE.md
+baseurl: /oaio
+
+title: Thingking Machine
+description: A machine is a thing. Things can not think. ...but some of them can thingk!
