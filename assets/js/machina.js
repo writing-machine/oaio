@@ -43,7 +43,7 @@ function runMachine() {
         console.log('Worker task successful. LLM Response:', e.data.data);
         try {
           const llmResponseData = e.data.data;
-          if (!llmResponseData || !llmResponseData.content) {
+          if (!llmResponseData) {
             const errorMsg = 'LLM response is missing essential content.';
             console.error(errorMsg);
             alert('Received an incomplete or invalid response from the LLM.');
