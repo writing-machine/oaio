@@ -14,15 +14,7 @@ self.onmessage = async function (event) {
 
 
 	try {
-		// --- 1. Fetch the token ---
-		console.log('Worker: Fetching the API token from https://localhost/');
-		const tokenResponse = await fetch('https://localhost/' + machineConfig.token); // opeai.txt
-		if (!tokenResponse.ok) {
-			throw new Error(`HTTP error fetching token! status: ${tokenResponse.status}`);
-		}
-		const token = (await tokenResponse.text()).trim();
-		console.log('Worker: Token fetched successfully.');
-
+		// --- 1. Fetch the token was here ---
 		// --- 2. Fetch instruction ---
 		let instructionText; // Declare here to ensure it's in scope
 		try {

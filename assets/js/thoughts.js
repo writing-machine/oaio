@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (thoughtsText && thoughtsText.trim() !== '') {
                 thoughtsContainer.textContent = thoughtsText; // Safely sets text content
             } else {
-                thoughtsContainer.textContent = 'There were not thoughts.';
+                thoughtsContainer.textContent = 'There were no thoughts.';
             }
         } catch (e) {
             console.error('Error reading or displaying thoughts from localStorage:', e);
