@@ -74,7 +74,7 @@ self.onmessage = async function (event) {
 		const apiOptions = {
 			method: 'POST',
 			headers: {
-				'Authorization': 'Bearer ' + token,
+				'Authorization': 'Bearer ' + llmSettings.token,
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(finalApiPayload)
