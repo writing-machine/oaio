@@ -8,5 +8,5 @@ include:
   - LICENSE.md
 baseurl: /oaio
 
-title: Thingking Machine
-description: A machine is a thing. Things can not think. ...but some of them can thingk!
+title: Writing Machine
+description: A machine that writes texts.
