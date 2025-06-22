@@ -34,7 +34,7 @@ function runMachine() {
       messages: mujMessages
     };
     
-    console.log('LLM Interaction: Launching LLM worker with MPUJ messages:', userQueryParameters);
+    console.log('LLM Interaction: Launching LLM worker with MUJ messages:', userQueryParameters);
     const llmWorker = new Worker(window.machineConfig.work);
     
     llmWorker.onmessage = function (e) {
