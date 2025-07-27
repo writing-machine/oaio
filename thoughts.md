@@ -8,4 +8,3 @@ title: Thoughts
   </div>
 </div>
 {% include thoughts.html %}
-
