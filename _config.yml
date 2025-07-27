@@ -6,16 +6,16 @@ relative_links:
 include:
   - README.md
   - LICENSE.md
-url: https://thingking-machine.github.io
+url: https://writing-machine.github.io
 baseurl: /oaio
 
-title: Thingking Machine
+title: Writing Machine
 description: A machine is a thing. Things can not think. ...but some of them can thingk!
 
 machine:
-  name: Thingking-Machine
-  verb: Thingking
-  instructions_file: thingking.txt
+  name: Writing-Machine
+  verb: Writing
+  instructions_file: writing.txt
   token: openai.txt
   apiUrl: https://api.openai.com/v1/responses
 
@@ -30,8 +30,8 @@ lm:
   temperature: 1.0
 
 github_settings:
-  owner: thingking-machine
-  repo: thingking_machine
+  owner: writing-machine
+  repo: writing_machine
   file_name: machina.yaml
   branch: main
   token_file: github.txt

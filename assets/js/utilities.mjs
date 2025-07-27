@@ -169,7 +169,7 @@ export function platoTextToCmj(platoText) {
 	if (typeof machineConfig !== 'undefined' && machineConfig && typeof machineConfig.name === 'string' && machineConfig.name.trim() !== '') {
 		effectiveAssistantNameUpper = machineConfig.name.toUpperCase();
 	} else {
-		effectiveAssistantNameUpper = 'THINGKING-MACHINE'; // Fallback to original literal for this function
+		effectiveAssistantNameUpper = 'WRITING-MACHINE'; // Fallback to original literal for this function
 	}
 
 	messageBlocks.forEach(block => {
@@ -419,7 +419,7 @@ export function platoHtmlToMpuj(platoHtml) {
 /**
  * Transforms platoText format to MUJ (Multi-User JSON) array
  * for OpenAI responses API. Consecutive non-assistant messages are concatenated
- * into a single 'user' message. Assistant messages (from 'Thingking-Machine')
+ * into a single 'user' message. Assistant messages (from 'Writing-Machine')
  * become 'assistant' messages. Messages do not contain a 'name' field.
  *
  * @param {string} platoText - The platoText formatted string.
@@ -441,7 +441,7 @@ export function platoTextToMuj(platoText) {
 	let currentUserContentParts = []; // Stores "Speaker: Utterance" strings for the current user block
 
 	// The specific assistant name for this transformation
-	const ASSISTANT_NAME_UPPER = 'THINGKING-MACHINE';
+	const ASSISTANT_NAME_UPPER = 'WRITING-MACHINE';
 
 	// Split by one or more pairs of newlines to get individual message blocks
 	const messageBlocks = trimmedPlatoText.split(/\n\n+/);
