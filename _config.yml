@@ -15,7 +15,7 @@ description: A machine is a thing. Things can not think. ...but some of them can
 machine:
   name: Writing-Machine
   verb: Writing
-  instructions_file: oaio_writing.txt
+  instructions_file: writing_oaio.txt
   token: openai.txt
   apiUrl: https://api.openai.com/v1/responses
 
